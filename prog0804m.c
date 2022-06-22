@@ -1,8 +1,7 @@
 #include <stdio.h>
-#define NMAX 4
 
 int main(void){
-	int i, j, k, term;
+	int i, j, k;
 
 	int a[2][4] = {
         {1,2,3,5},

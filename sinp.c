@@ -15,7 +15,7 @@ main()
     double a3=0, b3=2*M_PI;
     double a4=0, b4=1;
 
-//S2//
+//S1//
 	dx = (b1-a1)/nmax;
 	sum = 0.0;
 

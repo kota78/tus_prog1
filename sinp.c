@@ -70,10 +70,10 @@ main()
 	for(i=2;i<=nmax-2;i+=2)
 	{
 		x=a3+i*dx;
-	y=(func3(x))*2.0/3.0;
-	sum+=y*dx;
+	    y=(func3(x))*2.0/3.0;
+	    sum+=y*dx;
 	}
-	y=(func3(a3)+func1(b3))*1.0/3.0;
+	y=(func3(a3)+func3(b3))*1.0/3.0;
 	sum+=y*dx;
 
 	printf("The integral = %15.7e\n",sum);

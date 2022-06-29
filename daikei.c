@@ -8,7 +8,6 @@ main()
     int i;
     int nmax=100;
     double y, x, dx, sum;
-    double func1(double);
     //範囲//
     double a1=1, b1=2;
     dx = (b1-a1)/nmax;
@@ -59,7 +58,7 @@ main()
 double func1(double x)
 {
     double y;
-    y=x*x;
+    y=1.0/x;
     return y;
 }
 

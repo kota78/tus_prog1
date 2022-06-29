@@ -10,7 +10,7 @@ main()
 	double y,x,dx,sum;
 	double func1(double);
 
-	double a1=1.0, b1=2.0;
+	double a1=1, b1=2;
     double a2=0, b2=2;
     double a3=0, b3=2*M_PI;
     double a4=0, b4=1;

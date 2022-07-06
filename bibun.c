@@ -38,12 +38,17 @@ main()
 
     s2 = (ux2(x + h) - 2.0 * ux2(x) + ux2(x - h)) / pow(h, 2);
 
+
+     printf("---cos---\n");
     printf("Tyusin cos'(1)=%lf\n", c1[0]);
     printf("Zensin cos'(1)=%lf\n", c1[1]);
     printf("Koutai cos'(1)=%lf\n", c1[2]);
     printf("Genmitsu cos'(1)=%lf\n", -sin(1.0));
     printf("Tyusin cos''(1)=%lf\n", c2);
     printf("Genmitsu cos''(1)=%lf\n", -cos(1.0));
+
+    printf("---sin---\n");
+
     printf("Tyusin sin'(1)=%lf\n", s1[0]);
     printf("Zensin sin'(1)=%lf\n", s1[1]);
     printf("Koutai sin'(1)=%lf\n", s1[2]);
@@ -60,12 +65,14 @@ main()
 
     p2 = (ux3(x + h) - 2.0 * ux3(x) + ux3(x - h)) / pow(h, 2);
 
-    printf("Tyusin pow'(M_PI, cos(M_PI)))=%lf\n", p1[0]);
-    printf("Zensin pow'(M_PI, cos(M_PI)))=%lf\n", p1[1]);
-    printf("Koutai pow'(M_PI, cos(M_PI)))=%lf\n", p1[2]);
-    printf("Genmitsu pow'(M_PI, cos(M_PI)))=%lf\n", pow(M_PI, (cos(M_PI) - 1) * (cos(M_PI) - (M_PI)*sin(M_PI) * log(M_PI))));
-    printf("Tyusin pow''(M_PI, cos(M_PI)))=%lf\n", c2);
-    printf("Genmitsu pow''(M_PI, cos(M_PI)))=%lf\n", -pow(M_PI, cos(M_PI)));
+
+    printf("---f(x)---\n");
+    printf("Tyusin f'(x)=%lf\n", p1[0]);
+    printf("Zensin f'(x)=%lf\n", p1[1]);
+    printf("Koutai f'(x)=%lf\n", p1[2]);
+    printf("Genmitsu f(x)=%lf\n", -1/pow(M_PI, 2));
+    printf("Tyusin f''(x)=%lf\n", p2);
+    printf("Genmitsu f''(x)=%lf\n",2/pow(M_PI, 3) + log(M_PI)/M_PI);
 
     double t1[3];
     x=1.0;
@@ -73,6 +80,7 @@ main()
     t1[1] = (ux4(x + h) - ux4(x)) / h;
     t1[2] = (ux4(x) - ux4(x - h)) / h;
 
+    printf("---tan---\n");
     printf("Tyusin tan'(1)=%lf\n", t1[0]);
     printf("Zensin tan'(1)=%lf\n", t1[1]);
     printf("Koutai tan'(1)=%lf\n", t1[2]);
@@ -93,12 +101,15 @@ main()
 
     s2 = (ux2(x + h) - 2.0 * ux2(x) + ux2(x - h)) / pow(h, 2);
 
+    printf("---cos---\n");
     printf("Tyusin cos'(1)=%lf\n", c1[0]);
     printf("Zensin cos'(1)=%lf\n", c1[1]);
     printf("Koutai cos'(1)=%lf\n", c1[2]);
     printf("Genmitsu cos'(1)=%lf\n", -sin(1.0));
     printf("Tyusin cos''(1)=%lf\n", c2);
     printf("Genmitsu cos''(1)=%lf\n", -cos(1.0));
+
+    printf("---sin---\n");
     printf("Tyusin sin'(1)=%lf\n", s1[0]);
     printf("Zensin sin'(1)=%lf\n", s1[1]);
     printf("Koutai sin'(1)=%lf\n", s1[2]);
@@ -114,12 +125,14 @@ main()
 
     p2 = (ux3(x + h) - 2.0 * ux3(x) + ux3(x - h)) / pow(h, 2);
 
-    printf("Tyusin pow'(M_PI, cos(M_PI)))=%lf\n", p1[0]);
-    printf("Zensin pow'(M_PI, cos(M_PI)))=%lf\n", p1[1]);
-    printf("Koutai pow'(M_PI, cos(M_PI)))=%lf\n", p1[2]);
-    printf("Genmitsu pow'(M_PI, cos(M_PI)))=%lf\n", pow(M_PI, (cos(M_PI) - 1) * (cos(M_PI) - (M_PI)*sin(M_PI) * log(M_PI))));
-    printf("Tyusin pow''(M_PI, cos(M_PI)))=%lf\n", p2);
-    printf("Genmitsu pow''(M_PI, cos(M_PI)))=%lf\n", -pow(M_PI, cos(M_PI)));
+
+    printf("---f(x)---\n");
+    printf("Tyusin f(x)=%lf\n", p1[0]);
+    printf("Zensin f(x)=%lf\n", p1[1]);
+    printf("Koutai f(x)=%lf\n", p1[2]);
+    printf("Genmitsu f(x)=%lf\n", -1/pow(M_PI, 2));
+    printf("Tyusin f''(x)=%lf\n", p2);
+    printf("Genmitsu f''(x)=%lf\n",2/pow(M_PI, 3) + log(M_PI)/M_PI);
 
     x=1.0;
 
@@ -127,6 +140,7 @@ main()
     t1[1] = (ux4(x + h) - ux4(x)) / h;
     t1[2] = (ux4(x) - ux4(x - h)) / h;
 
+    printf("---tan---\n");
     printf("Tyusin tan'(1)=%lf\n", t1[0]);
     printf("Zensin tan'(1)=%lf\n", t1[1]);
     printf("Koutai tan'(1)=%lf\n", t1[2]);

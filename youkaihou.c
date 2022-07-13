@@ -9,9 +9,7 @@ main()
 	x[1] = 1;
 	v[0] = 0;
 	r= sqrt(10);
-	printf("%lf\n",r);
 	a = cos(0.07*r);
-	printf("%lf\n",a);
 
 	for(i=0; i <= 69998; i++)
 	{

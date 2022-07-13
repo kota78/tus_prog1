@@ -10,6 +10,7 @@ main()
 	v[0] = 0;
 	r= sqrt(10);
 	a = cos(0.07*r);
+	FILE *fp;
 
 	for(i=0; i <= 69998; i++)
 	{
@@ -21,9 +22,11 @@ main()
 	{
 	x1[i] = cos(0.001*r*i);
 	}
-
+	fp = fopen("yo.txt","w");
 	for(i=0; i <=70000; i = i +70)
 	{
 	printf("%lf,%lf,%lf\n ",i*0.001,x1[i],x[i]);
+	fprintf(fp, "%lf,%lf,%lf\n ",i*0.001,x1[i],x[i]);
 	}
+	fclose(fp);
 }
